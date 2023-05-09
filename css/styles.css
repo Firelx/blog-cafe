@@ -207,3 +207,49 @@ img {
     margin-top: 4rem;
     padding-bottom: 4rem;
 }
+
+/** Sobre nosotros **/
+@media (min-width: 768px) {
+    .sobre-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+
+    /* Lo mismo hecho con flexbox
+    .sobre-nosotros {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .sobre-nosotros__imagen,
+    .sobre-nosotros__texto {
+        flex-basis: 50%;
+    }
+    Manera antigua pero con mas soporte
+    
+    .sobre-nosotros {
+        display: flex;
+        justify-content: space-between; Tiene mas soporte que gap
+    }
+
+    .sobre-nosotros__imagen,
+    .sobre-nosotros__texto {
+        flex-basis: calc(50% - 1rem); Tiene mas soporte que flex-basis: 50%;
+    }
+
+    .sobre-nosotros {
+        display: flex;
+        justify-content: space-between; Tiene mas soporte que gap
+    }
+
+    .sobre-nosotros__texto {
+        flex: 0 0 calc(50% - 1rem); Factor de crecimiento, factor para hacerlo mas pequeño y la base
+    }
+
+    .sobre-nosotros__imagen {
+        flex: 0 0 calc(50% - 1rem);
+    }
+
+    */
+}
