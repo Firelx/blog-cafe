@@ -274,3 +274,56 @@ img {
 .curso:last-of-type {
     border-bottom: none;
 }
+
+
+/** Contacto **/
+
+.contacto-bg {
+    background-image: url(/img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.etiqueta {
+    display: block;
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+.formulario {
+    background-color: var(--blanco);
+    margin: -10rem auto 0 auto;
+    width: 95%;
+    padding: 2rem 5rem;
+}
+
+
+.campo {
+    border: none;
+    padding: 2rem 0;
+}
+
+input, textarea {
+    margin: 1rem 0 0 0;
+    width: 100%;
+    min-height: 3.5rem;
+    border: 1px solid var(--gris);
+}
+
+.boton--enviar {
+    border: none;
+    width: 100%;
+}
+
+.boton--enviar:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+
+    .boton--enviar {
+        margin: 0 auto;
+        width: 20%;
+    } 
+}
