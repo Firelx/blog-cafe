@@ -191,12 +191,14 @@ img {
     margin-bottom: 0;
 }
 
-.widget-curso__label {
+.widget-curso__label,
+.curso__label {
     font-family: var(--fuenteHeading);
     font-weight: bold;
 }
 
-.widget-curso__info {
+.widget-curso__info,
+.curso__info {
     font-weight: normal;
 }
 
@@ -227,7 +229,7 @@ img {
         flex-basis: 50%;
     }
     Manera antigua pero con mas soporte
-    
+
     .sobre-nosotros {
         display: flex;
         justify-content: space-between; Tiene mas soporte que gap
@@ -252,4 +254,23 @@ img {
     }
 
     */
+}
+
+/** Cursos **/
+
+.curso {
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gris);
+}
+
+@media (min-width: 768px) {
+    .curso {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+
+.curso:last-of-type {
+    border-bottom: none;
 }
